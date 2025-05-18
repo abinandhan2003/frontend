@@ -1,0 +1,9 @@
+#herobg{
+    background-image: url('../img/Herobg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: "brightness(0.7)"
+}
