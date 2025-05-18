@@ -9,12 +9,24 @@ export default function Header() {
     <header className="bg-black text-gold-royal shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
+         
+          {/* Mobile Toggle Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-[#FFD700] focus:outline-none"
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+         
           {/* Logo */}
           <div className="tamil-logo flex items-center">
-          <img src={Logo} alt="Logo" className="w-14 scale-110" />
-          <div style={{marginLeft:"20px"}} className="text-2xl text-[#FFD700] font-semibold">
+          
+          <div style={{marginLeft:"20px"}} className="text-2xl text-[#FFD700] font-semibold mr-6">
             CHENNAI TALKIES USA
           </div>
+          <img src={Logo} alt="Logo" className="w-14 scale-110" />
         </div>
 
           {/* Desktop Menu */}
@@ -32,15 +44,7 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Mobile Toggle Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="text-[#FFD700] focus:outline-none"
-            >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+         
         </div>
 
         {/* Mobile Menu */}
