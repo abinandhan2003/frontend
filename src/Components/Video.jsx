@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Intro from '../img/Brand.mp4';
+import './Hero.css'
 
 const VideoSection = () => {
     const videoRef = useRef(null);
@@ -70,7 +71,9 @@ const VideoSection = () => {
     };
 
     return (
-        <section className="bg-[#f5e6c0] py-16">
+        <section className="py-16 inset-0 bg-cover bg-center z-0"
+            id='herobg'
+        >
             <div className="container mx-auto px-4">
                
                 {/* Video Container */}

@@ -17,7 +17,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         id='herobg'
-                
+    
       />
       
       {/* Content Container */}
