@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const UpcomingEvents = () => {
-    // Sample event data - replace with your actual data
+    
+     useEffect(() => {
+                AOS.init();
+            }, []);
+
     const events = [
         {
             id: 1,

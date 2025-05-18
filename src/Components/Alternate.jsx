@@ -12,7 +12,7 @@ const AlternatingSection = () => {
         }, []);
         
   return (
-    <div className="container mx-auto py-12 px-5 bg-[#f5e6c0] md:px-20">
+    <div className="container mx-auto py-12 px-5 bg-[#f5e6c0] w-full md:px-20">
       {/* First Section - Similar to the image provided */}
       <div className="flex flex-col md:flex-row items-center mb-16">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 "

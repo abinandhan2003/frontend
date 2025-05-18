@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export default function Contact() {
+
+     useEffect(() => {
+            AOS.init();
+        }, []);
+
     return (
         <section className="text-gray-600 body-font relative bg-[#f5e6c0]">
             <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">

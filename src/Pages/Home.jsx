@@ -9,7 +9,7 @@ import VideoSection from '../Components/Video'
 
 function Home() {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden bg-[#f5e6c0]'>
       <HeroSection />
       <AlternatingSection />
       <VideoSection />
