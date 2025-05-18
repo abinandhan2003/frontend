@@ -21,7 +21,16 @@ export default function Header() {
           </div>
          
           {/* Logo */}
-          <div className="tamil-logo flex items-center">
+          <div className="hidden tamil-logo md:flex items-center">
+          <img src={Logo} alt="Logo" className="w-14 scale-110" />
+          <div style={{marginLeft:"20px"}} className="text-2xl text-[#FFD700] font-semibold">
+            CHENNAI TALKIES USA
+          </div>
+          
+        </div>
+
+          {/* Mobile  */}
+          <div className="md:hidden tamil-logo flex items-center">
           
           <div style={{marginLeft:"20px"}} className="text-2xl text-[#FFD700] font-semibold mr-6">
             CHENNAI TALKIES USA
